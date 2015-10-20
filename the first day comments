@@ -1,0 +1,46 @@
+1.	Working directory 
+Finding : pwd 
+Setting : cd  /C/Uers/wwang3 or cd .. then cd wwang3
+
+2.	Initialized Git repository in working directory: git init
+3.	Setting user.name and email:
+git config --global user.name  “weiwie”
+git config --global user.email  “wangweiwei@”
+Notes: if setting for a single repository, we will not use global
+4.	All basic setting layer out: git config –list
+5.	All contents of the working directory: ls
+6.	Initial commit (untracked files): git status
+7.	Tracking file: git add . or git add Weiwei.txt
+8.	Commit file to repository: git commit –m “comments” or git commit –am “comments”
+9.	Remoting file : git remote add SomeName URL
+10.	Pushing it into repository: git push –u SomeName master, if you modified files in the working
+Directory, you can use git push SomeName master to update files in the Repository
+Using 6-10 finish the process to add files to github repository
+git status > git add .> git commit >git status >git remote add  * URL >git push * master
+Notes: 
+•	Questions:
+If it has two readme.file or non-up-forward or some other questions 
+•	Answers:
+git pull URL
+git commit –m
+•	Git push –f SomeName master : avoiding branch behind problems
+11.	Removing files:
+•	Removing from local ws and Repository (which means it is deleted in the ws)
+git rm Weiwei.txt
+whereas if you only wants to change the file name not delete the contect of the file
+git mv Weiwei.txt wang.txt  
+changing a file name and moving to the other folder
+git mv Weiwei.txt NewFolder/ wang.txt  
+12.	Removing file only from repository :
+git rm –cached filename
+13.	Restoring changes back: git checkout –filename (here it works only before the file get track)
+14.	 Basic information:
+git version  or which git
+15.	Displaying all commits: git log
+16.	Checking the difference in a file : git diff
+•	Working copy vs repository: git diff
+•	Staging area vs repository: git diff --staged or git diff --cached
+17.	Getting repository from github: git clone URL
+Eg: git clone git://github.com/schacon/grit.git mygrit
+
+ 
