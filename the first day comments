@@ -43,4 +43,3 @@ git version  or which git
 17.	Getting repository from github: git clone URL
 Eg: git clone git://github.com/schacon/grit.git mygrit
 
- 
