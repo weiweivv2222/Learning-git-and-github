@@ -14,21 +14,21 @@ Notes: if setting for a single repository, we will not use global
 8.	Commit file to repository: git commit –m “comments” or git commit –am “comments”
 9.	Remoting file : git remote add SomeName URL
 10.	Pushing it into repository: git push –u SomeName master, if you modified files in the working
-Directory, you can use git push SomeName master to update files in the Repository
-Using 6-10 finish the process to add files to github repository
-git status > git add .> git commit >git status >git remote add  * URL >git push * master
+     Directory, you can use git push SomeName master to update files in the Repository
+     Using 6-10 finish the process to add files to github repository
+      git status > git add .> git commit >git status >git remote add  * URL >git push * master
 Notes: 
-•	Questions:
+    •	Questions:
 If it has two readme.file or non-up-forward or some other questions 
-•	Answers:
+    •	Answers:
 git pull URL
 git commit –m
-•	Git push –f SomeName master : avoiding branch behind problems
+    •	Git push –f SomeName master : avoiding branch behind problems
 11.	Removing files:
-•	Removing from local ws and Repository (which means it is deleted in the ws)
-git rm Weiwei.txt
-whereas if you only wants to change the file name not delete the contect of the file
-git mv Weiwei.txt wang.txt  
+    •	Removing from local ws and Repository (which means it is deleted in the ws)
+       git rm Weiwei.txt
+         whereas if you only wants to change the file name not delete the contect of the file
+     git mv Weiwei.txt wang.txt  
 changing a file name and moving to the other folder
 git mv Weiwei.txt NewFolder/ wang.txt  
 12.	Removing file only from repository :
