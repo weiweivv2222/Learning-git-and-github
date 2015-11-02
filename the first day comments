@@ -22,19 +22,25 @@ Notes:
           If it has two readme.file or non-up-forward or some other questions 
     •	Answers:
           git pull URL
-          git commit –m
+          git fetch "remotename"
+          git commit –am
+          git merge "remotename" master
+          git push
     •	Git push –f SomeName master : avoiding branch behind problems
+    #     
 11.	Removing files:
     •Removing from local ws and Repository (which means it is deleted in the ws)
-      git rm Weiwei.txt
-        whereas if you only wants to change the file name not delete the contect of the file
+     git rm Weiwei.txt
+     whereas if you only wants to change the file name not delete the contect of the file
      git mv Weiwei.txt wang.txt  
      changing a file name and moving to the other folder
      git mv Weiwei.txt NewFolder/ wang.txt  
 12.	Removing file only from repository :
      git rm –cached filename
+13>  Removing remote 
+     git remote rm "remotename"
 13.	Restoring changes back: git checkout –filename (here it works only before the file get track)
-14.	 Basic information:
+14.	Basic information:
      git version  or which git
 15.	Displaying all commits: git log
 16.	Checking the difference in a file : git diff
