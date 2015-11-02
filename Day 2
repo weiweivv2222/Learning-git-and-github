@@ -1,15 +1,15 @@
 Day 2 : 20-10-2015
 1.	Creating a new folder and file: touch filename.txt and touch foldername
-http://www.typecastexception.com/post/2012/09/08/Basic-Git-Command-Line-Reference-for-Windows-Users.aspx#BASH-MERGING-BRANCHES
+   http://www.typecastexception.com/post/2012/09/08/Basic-Git-Command-Line-Reference-for-Windows-Users.aspx#BASH-MERGING-BRANCHES
 2.	Create a new branch: git branch testing
 3.	Choosing the different branch: git checkout master
 4.	git branch --no-merged; git branch –v; $ git branch -d testing
 5.	If the repository has two branches, how to clone them
-•	git clone URL: for master branch, then you need to do git work under this folder.
-•	git clone-b branchname URL: for the other branch, you need to put into the different folder as master branch. Then you can modified the files in your local space, after that git push to the repository.
-•	How to git the hide branch in master clone repository?
-git branch –a eg:
- $ git branch -a
+   •	git clone URL: for master branch, then you need to do git work under this folder.
+   •	git clone-b branchname URL: for the other branch, you need to put into the different folder as master branch. Then you can modified the files in your local space, after that git push to the repository.
+   •	How to git the hide branch in master clone repository?
+    git branch –a eg:
+    $ git branch -a
 * master
   remotes/origin/HEAD
   remotes/origin/master
@@ -18,7 +18,7 @@ git branch –a eg:
 
             git the remote branch:  git checkout  origin/experimental
             work on the hide remote: git checkout – b experimental origin/experimental
-        		merge the branches: under master branch, git merge experimental
-  	      	delete experimental branch after merge: git branch –d orD experimental
+        	  	merge the branches: under master branch, git merge experimental
+  	      	  delete experimental branch after merge: git branch –d orD experimental
 
 http://stackoverflow.com/questions/67699/clone-all-remote-branches-with-git?rq=1(check 2816)
