@@ -1,6 +1,7 @@
 1.	Working directory 
      Finding : pwd 
      Setting : cd  /C/Uers/wwang3 or cd .. then cd wwang3
+     git clone GITHUBURL
 
 2.	Initialized Git repository in working directory: git init
 3.	Setting user.name and email:
