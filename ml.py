@@ -21,7 +21,7 @@ def lda_pitchdecks(text_list, number_topics,number_words,counts=[0]):
     '''
     # Initialise the count vectorizer
     tf_vectorizer = CountVectorizer(strip_accents = 'unicode',
-                                stop_words = 'english',
+                                stop_words = 'Dutch',
                                 lowercase = True,
                                 token_pattern = r'\b[a-zA-Z]{3,}\b')
     # generate word counts
