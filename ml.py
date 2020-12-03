@@ -5,12 +5,11 @@ Python version: 3.7.3
 
 #%%load packages for LDA
 
-<<<<<<< HEAD
+
 import numpy as np
 import panda as pd
 import system as sys
-=======
->>>>>>> 699bf1715b12479ecc1ff47381f41636401e7bad
+
 
 
 #%% LDA
