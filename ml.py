@@ -23,7 +23,6 @@ def lda_pitchdecks(text_list, number_topics,number_words,counts=[0]):
     tf_vectorizer = CountVectorizer(strip_accents = 'unicode',
                                 stop_words = 'Dutch',
                                 lowercase = False,
->>>>>>> 755c7779b527c2ea3dfdb9dbf5e6065d7e0cdea8
                                 token_pattern = r'\b[a-zA-Z]{3,}\b')
     # generate word counts
     dtm_tf = tf_vectorizer.fit_transform(text_list)
@@ -45,3 +44,9 @@ def lda_pitchdecks(text_list, number_topics,number_words,counts=[0]):
     counts[0]+=1
     file_path = os.path.join(outpath, 'LDA_{}.html'.format(counts[0]))
     pyLDAvis.save_html(dtm_output,file_path)
+
+
+def text_to_wordlist(text):
+    review=normalization_word2vec(text)
+    words = review.lower().split()
+    return words
