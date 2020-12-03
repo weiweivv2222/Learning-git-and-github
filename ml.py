@@ -50,3 +50,22 @@ def text_to_wordlist(text):
     review=normalization_word2vec(text)
     words = review.lower().split()
     return words
+    
+def get_text_string(fpath):    
+    #read load all .txt from the folder
+    txtfpath=os.path.join(fpath,'*.txt')
+    allfiles=glob.glob(txtfpath)
+    #print(len(allfiles))
+    #print(type(allfiles))
+    
+    #build corpus doc
+    doc=[] # create an empty list
+    for fname in allfiles: 
+        with open(fname) as f:
+            ls=f.readlines() 
+            ls=list(map(lambda x:x.strip(),ls))#remove '\n' from ls 
+            doc.append(ls)
+    corpus=[]#corpus is the corpus of the files
+    for i in doc:
+        corpus.append(','.join(i)) 
+    return ' '.join(map(str, corpus))
