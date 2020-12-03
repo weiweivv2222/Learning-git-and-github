@@ -21,8 +21,8 @@ def lda_pitchdecks(text_list, number_topics,number_words,counts=[0]):
     '''
     # Initialise the count vectorizer
     tf_vectorizer = CountVectorizer(strip_accents = 'unicode',
-                                stop_words = 'english',
-                                lowercase = True,
+                                stop_words = 'english1',
+                                lowercase = False,
                                 token_pattern = r'\b[a-zA-Z]{3,}\b')
     # generate word counts
     dtm_tf = tf_vectorizer.fit_transform(text_list)
