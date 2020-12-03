@@ -4,16 +4,7 @@ Python version: 3.7.3
 """
 
 #%%load packages for LDA
-import os
-import warnings
-warnings.simplefilter("ignore", DeprecationWarning)
-from datetime import date
-warnings.filterwarnings("ignore", category=FutureWarning)
-from sklearn.decomposition import LatentDirichletAllocation as LDA
-from sklearn.feature_extraction.text import CountVectorizer
-import pyLDAvis.sklearn
 
-import visualization 
 
 #%% LDA
 def lda_pitchdecks(text_list, number_topics,number_words,counts=[0]):
