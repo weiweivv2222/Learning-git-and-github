@@ -4,7 +4,7 @@ Python version: 3.7.3
 """
 
 #%%load packages for LDA
-
+import numpy
 
 #%% LDA
 def lda_pitchdecks(text_list, number_topics,number_words,counts=[0]):
