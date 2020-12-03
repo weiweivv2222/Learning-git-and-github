@@ -6,7 +6,7 @@ Python version: 3.7.3
 #%%load packages for LDA
 
 <<<<<<< HEAD
-import numpy as np
+import numpy as np : I want to make a mistake
 import panda as pd
 import system as sys
 =======
