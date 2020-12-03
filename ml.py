@@ -4,11 +4,11 @@ Python version: 3.7.3
 """
 
 #%%load packages for LDA
-<<<<<<< HEAD
-import numpy
-=======
-imoprt numpy as np
->>>>>>> 26be77cc833d7c2459371612c46407beb3da0752
+
+import numpy as np
+import panda as pd
+import system as sys
+
 
 #%% LDA
 def lda_pitchdecks(text_list, number_topics,number_words,counts=[0]):
