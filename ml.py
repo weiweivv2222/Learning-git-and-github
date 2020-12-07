@@ -23,6 +23,7 @@ def lda_pitchdecks(text_list, number_topics,number_words,counts=[0]):
     tf_vectorizer = CountVectorizer(strip_accents = 'unicode',
                                 stop_words = 'Dutch',
                                 lowercase = False,
+>>>>>>> 755c7779b527c2ea3dfdb9dbf5e6065d7e0cdea8
                                 token_pattern = r'\b[a-zA-Z]{3,}\b')
     # generate word counts
     dtm_tf = tf_vectorizer.fit_transform(text_list)
@@ -44,6 +45,7 @@ def lda_pitchdecks(text_list, number_topics,number_words,counts=[0]):
     counts[0]+=1
     file_path = os.path.join(outpath, 'LDA_{}.html'.format(counts[0]))
     pyLDAvis.save_html(dtm_output,file_path)
+<<<<<<< HEAD
 
 
 def text_to_wordlist(text):
@@ -69,3 +71,5 @@ def get_text_string(fpath):
     for i in doc:
         corpus.append(','.join(i)) 
     return ' '.join(map(str, corpus))
+=======
+>>>>>>> parent of 5bf12f8... add text_to_wordlist function at master branch

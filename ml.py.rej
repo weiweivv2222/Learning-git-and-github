@@ -1,18 +1,12 @@
 diff a/ml.py b/ml.py	(rejected hunks)
-@@ -4,16 +4,7 @@
- """
- 
- #%%load packages for LDA
--import os
--import warnings
--warnings.simplefilter("ignore", DeprecationWarning)
--from datetime import date
--warnings.filterwarnings("ignore", category=FutureWarning)
--from sklearn.decomposition import LatentDirichletAllocation as LDA
--from sklearn.feature_extraction.text import CountVectorizer
--import pyLDAvis.sklearn
- 
--import visualization 
- 
- #%% LDA
- def lda_pitchdecks(text_list, number_topics,number_words,counts=[0]):
+@@ -44,3 +44,9 @@
+     counts[0]+=1
+     file_path = os.path.join(outpath, 'LDA_{}.html'.format(counts[0]))
+     pyLDAvis.save_html(dtm_output,file_path)
++
++
++def text_to_wordlist(text):
++    review=normalization_word2vec(text)
++    words = review.lower().split()
++    return words
+\ No newline at end of file
